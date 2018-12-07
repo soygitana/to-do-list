@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(images/background.jpg);
+    background-position: center bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+
+}
+
+.main {
+    width: 100vw;
+    min-height: 100vh;
+}
+
+h1 {
+    position: relative;
+    top: 12vh;
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px;
+    color: rgb(212, 212, 212);
+    text-align: center;
+
+}
+
+
+.mytask {
+    position: absolute;
+    top: 32vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60vw;
+    height: 5vh;
+}
+
+
+
+input[type="text"] {
+    color: #13b38b;
+}
+
+.add {
+    position: absolute;
+    left: 50%;
+    top: 38vh;
+    transform: translateX(-50%);
+    margin-top: 5px;
+    height: 3vh;
+    padding: 1vh 2vh;
+    box-sizing: content-box;
+    border: 1px solid #13b38b;
+    border-radius: 10%;
+    color: rgb(37, 36, 36);
+    opacity: 0.6;
+    font-size: 10px;
+    font-weight: bold;
+
+}
+
+
+.add:hover {
+    cursor: pointer;
+    background-color: #13b38b;
+
+
+}
+
+h2 {
+    position: absolute;
+    top: 45vh;
+    left: 3vw;
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+    color: rgb(212, 212, 212);
+}
+
+
+.green {
+    color: #13b38b;
+    font-size: 25px;
+}
+
+
+
+.todo {
+    color: white;
+    font-size: 10px;
+    list-style: none;
+    margin-left: -30vw;
+
+}
+
+
+
+.todo li::before {
+    content: "\2022";
+    color: #13b38b;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+
+}
+
+li {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+
+
+.btndone {
+    position: absolute;
+    left: 80vw;
+    padding: 5px;
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(14, 13, 13);
+    border: 1px solid #13b38b;
+    border-radius: 10%;
+}
+
+.btndone:hover {
+    cursor: pointer;
+    background-color: #13b38b;
+
+}
+
+
+.alltasks {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mytasks {
+    box-sizing: border-box;
+    flex-basis: 25%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 35vh;
+}
+
+.mytasks>* {
+    padding-bottom: 35px;
+}
+
+
+
+h3 {
+    font-family: 'Indie Flower', cursive;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+
+@media (min-width: 375px) {
+    .mytask {
+        top: 25vh;
+
+    }
+
+    .add {
+        top: 32vh;
+
+    }
+
+    h2 {
+        font-size: 30px;
+
+    }
+
+    .green {
+        font-size: 35px;
+    }
+
+    .mytasks {
+        margin-top: 45vh;
+
+    }
+
+}
+
+@media (min-width: 410px) {
+
+    h1 {
+        font-size: 35px;
+    }
+
+
+    h3 {
+        font-size: 35px;
+
+    }
+
+
+}
+
+@media (orientation: landscape) and (min-width: 800px) {
+
+
+    .mytask {
+        top: 30vh;
+        width: 60vw;
+    }
+
+    .add {
+        top: 35vh;
+
+
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .green {
+        font-size: 30px;
+    }
+
+    .mytasks {
+        margin-top: 40vh;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .mytask {
+        top: 20vh;
+    }
+
+    .add {
+        top: 26vh;
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .green {
+        font-size: 45px;
+    }
+
+    h3 {
+        font-size: 45px;
+    }
+
+    li {
+        font-size: 25px;
+    }
+
+    input[type="text"] {
+        font-size: 24px;
+    }
+
+
+
+}
+
+
+@media (orientation: landscape) and (min-width: 1200px) {
+
+    h1 {
+        font-size: 45px;
+    }
+
+    .mytask {
+        top: 30vh;
+        width: 50vw;
+    }
+
+    .add {
+        top: 36vh;
+        font-size: 14px;
+        border: 2px solid #13b38b;
+    }
+
+    h2 {
+        top: 50vh;
+        font-size: 30px;
+    }
+
+    .green {
+        font-size: 35px;
+    }
+
+    .mytasks {
+        margin-top: 45vh;
+    }
+
+    .todo {
+        margin-left: -25vh;
+
+    }
+
+    li {
+        font-size: 16px;
+    }
+
+    input[type="text"] {
+        font-size: 16px;
+
+    }
+
+
+    .btndone {
+        left: 70vw;
+    }
+}
