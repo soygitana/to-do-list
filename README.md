@@ -1,3 +1,7 @@
-"# to-do-list" 
-"# to-do-list" 
-"# to-do-list" 
+# Simple to-do list
+
+## Technologies used
+
+* HTML
+* CSS
+* JS
