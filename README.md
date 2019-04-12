@@ -1,7 +1,8 @@
 # Simple to-do list
 
-## Technologies used
+## Technologies used:
 
 * HTML
 * CSS
 * JS
+* media queries
